@@ -6,7 +6,7 @@ packages=(
   nose
 )
 
-for PACKAGE in packages; do
+for PACKAGE in $packages; do
     pip install "$PACKAGE"
 done
 
