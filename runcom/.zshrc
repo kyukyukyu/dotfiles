@@ -48,7 +48,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git pip brew virtualenvwrapper npm)
+plugins=(git pip python pyenv brew npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,7 +77,7 @@ else
 fi
 
 # Finally we can source the dotfiles (order matters)
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,rvm,custom}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{functions,path,env,alias,completion,grep,prompt,nvm,rvm,custom}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
