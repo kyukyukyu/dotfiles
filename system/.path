@@ -14,8 +14,6 @@ prepend-path "$HOME/bin"
 prepend-path "/sbin"
 prepend-path "/usr/sbin"
 prepend-path "/usr/local/sbin"
-prepend-path "/$HOME/Library/Haskell/bin"
-# export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin"
 
 # Remove duplicates (preserving prepended items)
 # Source: http://unix.stackexchange.com/a/40755
