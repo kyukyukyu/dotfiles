@@ -9,9 +9,9 @@ the list of packages are modified in my taste.
 * Core
     * Zsh + oh-my-zsh + coreutils
     * Homebrew, homebrew-cask, homebrew-science, homebrew-python
-    * Node.js + npm + nvm
+    * nvm
     * Git + hub
-    * Python 3 and pyenv
+    * Python 2.7, pip, pyenv
     * peco
 * OS X Quick Look plugins
 * OS X apps
@@ -23,11 +23,13 @@ On a sparkling fresh installation of OS X:
     sudo softwareupdate -i -a
     xcode-select --install
 
+**Note that you should install the entire Xcode in this step!**
+
 Install the dotfiles with either Git:
 
 ### Clone with Git
 
-    git clone https://github.com/webpro/dotfiles.git
+    git clone https://github.com/kyukyukyu/dotfiles.git
     source dotfiles/install.sh
 
 ## The `dotfiles` command
