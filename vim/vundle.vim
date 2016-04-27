@@ -1,7 +1,7 @@
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle/
 call vundle#begin("$HOME/.vim/bundle")
 
 " let Vundle manage Vundle, required
@@ -14,7 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 
 " Fast navigation with <leader>t
-Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'wincent/command-t'
 
 " vim-airline instead of powerline
 Plugin 'vim-airline/vim-airline'
