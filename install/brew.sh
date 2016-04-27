@@ -19,10 +19,12 @@ apps=(
   httpie
   macvim
   matplotlib
+  nvm
   numpy
   peco
   pyenv
-  python3
+  pyenv-virtualenv
+  python
   scipy
   tmux
   tree
@@ -32,7 +34,9 @@ apps=(
 brew install "${apps[@]}"
 
 # Link vim binary from MacVim.
-ln -s /usr/local/bin/mvim vim
+[ ! -d ~/bin ] && mkdir ~/bin
+ln -s /usr/local/bin/mvim ~/bin/vim
 
 # Run pyenv initialization script.
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
