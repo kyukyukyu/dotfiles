@@ -36,7 +36,7 @@ brew install "${apps[@]}"
 
 # Link vim binary from MacVim.
 [ ! -d ~/bin ] && mkdir ~/bin
-ln -s /usr/local/bin/mvim ~/bin/vim
+[ ! -L ~/bin/vim ] && ln -s /usr/local/bin/mvim ~/bin/vim
 
 # Run pyenv initialization script.
 eval "$(pyenv init -)"
