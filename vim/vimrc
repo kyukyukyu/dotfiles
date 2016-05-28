@@ -59,7 +59,7 @@ if has("gui_macvim")
 endif
 
 " youcompleteme: filetype whitelist
-let g:ycm_filetype_whitelist={'c': 1, 'cpp': 1, 'javascript': 1}
+let g:ycm_filetype_whitelist={'c': 1, 'cpp': 1, 'javascript': 1, 'python': 1}
 
 " youcompleteme: get rid of annoying preview pane
 let g:ycm_add_preview_to_completeopt=0
@@ -76,6 +76,10 @@ let g:syntastic_mode_map = {
             \ "mode": "active",
             \ "active_filetypes": [],
             \ "passive_filetypes": ["python"] }
+
+" Turn off Rope's code completion used in python-mode. By doing this, Jedi will
+" be used by YCM.
+let g:pymode_rope_completion = 0
 
 " Syntastic checkers
 let g:syntastic_haskell_checkers = ["ghc_mod"]
