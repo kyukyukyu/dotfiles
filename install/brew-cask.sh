@@ -9,6 +9,8 @@ brew tap caskroom/fonts
 
 apps=(
   clion
+  cyberduck
+  dash
   dropbox
   evernote
   firefox
@@ -16,6 +18,7 @@ apps=(
   go2shell
   google-chrome
   google-drive
+  haskell-platform
   intellij-idea
   iterm2
   macdown

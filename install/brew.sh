@@ -19,6 +19,7 @@ apps=(
   httpie
   macvim
   matplotlib
+  maven
   nvm
   numpy
   peco
