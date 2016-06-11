@@ -17,9 +17,9 @@ apps=(
   git
   hub
   httpie
-  macvim
   matplotlib
   maven
+  neovim
   nvm
   numpy
   peco
@@ -34,10 +34,13 @@ apps=(
 
 brew install "${apps[@]}"
 
-# Link vim binary from MacVim.
-[ ! -d ~/bin ] && mkdir ~/bin
-[ ! -L ~/bin/vim ] && ln -s /usr/local/bin/mvim ~/bin/vim
+# Remove the linkage of vim binary from MacVim.
+[ -L ~/bin/vim ] && rm -f ~/bin/vim
 
+# Enable the support for legacy python-vim interface of Vim.
+pip2 install neovim
+
+>>>>>>> 40ade05... Install neovim pip package
 # Run pyenv initialization script.
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
