@@ -1,8 +1,8 @@
 set nocompatible              " be iMproved, required
 
 " Load plugins
-if filereadable(expand("$VIM/plug.vim"))
-  source $VIM/plug.vim
+if filereadable(expand("$XDG_CONFIG_HOME/nvim/plug.vim"))
+  source $XDG_CONFIG_HOME/nvim/plug.vim
 endif
 
 syntax on

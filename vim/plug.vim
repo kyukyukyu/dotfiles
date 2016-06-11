@@ -1,4 +1,4 @@
-call plug#begin("$HOME/.vim/plugged")
+call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
 
 " ==== General ===
 " Git integration

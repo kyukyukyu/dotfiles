@@ -37,10 +37,16 @@ brew install "${apps[@]}"
 # Remove the linkage of vim binary from MacVim.
 [ -L ~/bin/vim ] && rm -f ~/bin/vim
 
+# Link the configuration directory for Neovim.
+[ ! -d ~/.config/nvim ] && mkdir -p ~/.config/nvim
+conf_files=(init.vim plug.vim)
+for cf in "${conf_files[@]}"; do
+    [ ! -L ~/.config/nvim/$cf ] && ln -s $DOTFILES_DIR/vim/$cf ~/.config/nvim/$cf
+done
+
 # Enable the support for legacy python-vim interface of Vim.
 pip2 install neovim
 
->>>>>>> 40ade05... Install neovim pip package
 # Run pyenv initialization script.
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
