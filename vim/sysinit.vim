@@ -1,8 +1,8 @@
 set nocompatible              " be iMproved, required
 
 " Load plugins
-if filereadable(expand("$VIM/vundle.vim"))
-  source $VIM/vundle.vim
+if filereadable(expand("$VIM/plug.vim"))
+  source $VIM/plug.vim
 endif
 
 syntax on
