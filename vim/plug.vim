@@ -4,8 +4,8 @@ call plug#begin("$HOME/.vim/plugged")
 " Git integration
 Plug 'tpope/vim-fugitive'
 
-" Fast navigation with <leader>t
-Plug 'wincent/command-t'
+" Fuzzy Finder
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " vim-airline instead of powerline
 Plug 'vim-airline/vim-airline'

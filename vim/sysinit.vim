@@ -43,6 +43,9 @@ set colorcolumn=80
 " NERDTreeToggle keymap
 map <F2> :NERDTreeToggle<CR>
 
+" I will miss you, Command-T. But, it's the era of fzf!
+map <Leader>t :FZF<CR>
+
 " Solarized color scheme
 syntax enable
 set background=dark
