@@ -86,6 +86,7 @@ let g:pymode_rope_completion = 0
 
 " Syntastic checkers
 let g:syntastic_haskell_checkers = ["ghc_mod"]
+let g:syntastic_javascript_checkers = ["eslint"]
 
 " Command-T file scanner
 let g:CommandTFileScanner="git"
