@@ -26,6 +26,12 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/syntastic'
 
 " Tmux-Vim integration
+" Refer to
+" https://github.com/christoomey/vim-tmux-navigator#it-doesnt-work-in-neovim-specifically-c-h
+" for key binding issue. This dotfiles configuration defaults to not defining
+" another key binding. To resolve this issue when you are using iTerm 2 on
+" macOS, follow the instruction from below:
+" https://github.com/neovim/neovim/wiki/FAQ#my-ctrl-h-mapping-doesnt-work
 Plug 'christoomey/vim-tmux-navigator'
 
 " Whitespace highliting
