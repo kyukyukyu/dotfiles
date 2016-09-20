@@ -11,6 +11,7 @@ brew upgrade
 
 apps=(
   coreutils
+  cloc
   cmake
   dockutil
   gcc
